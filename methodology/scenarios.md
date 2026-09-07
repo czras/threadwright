@@ -582,7 +582,61 @@ It cannot eliminate them.
 
 ---
 
-# 13. What the Scenarios Demonstrate Collectively
+# 13. When the Request Is Not the Intent
+
+A person says:
+
+> "I want to find love."
+
+The statement appears to express an intention, but it does not establish a sufficiently precise intended outcome.
+
+It could mean that the person wants:
+
+* a long-term romantic relationship,
+* companionship,
+* a casual sexual relationship,
+* a relationship while travelling,
+* or something else entirely.
+
+Treating the statement itself as the intended outcome would prematurely constrain the work.
+
+Instead, the statement is treated as **input**.
+
+The practitioner asks what the person is actually trying to achieve and explores the ambiguity until a sufficiently useful intended outcome can be established.
+
+For example:
+
+> "I want to find a long-term romantic partner with whom I can build a relationship."
+
+That outcome can now provide a meaningful basis for further work.
+
+The same pattern occurs in product and software development.
+
+A customer may say:
+
+> "We need a mobile app."
+
+This may be a proposed implementation rather than the outcome.
+
+Further exploration might reveal:
+
+> "Field workers need to access and update customer information while away from their desks."
+
+The mobile app may or may not ultimately be the appropriate way to achieve that outcome.
+
+### TW lesson
+
+**Do not assume that the initial input is the intended outcome.**
+
+Input may be an outcome, problem, assumption, constraint, interpretation, proposed implementation, experience, or a mixture of these.
+
+Where the distinction is consequential, scrutinize the input and establish the intended outcome before allowing the initial framing to determine the Change.
+
+The purpose is not to replace the person's intent with the practitioner's interpretation. Interpretations remain open to confirmation, rejection, and refinement.
+
+---
+
+# 14. What the Scenarios Demonstrate Collectively
 
 Across the scenarios, the methodology consistently works without introducing additional fundamental concepts.
 
@@ -590,12 +644,19 @@ The four primitives remain sufficient:
 
 ```text
 Change
+
 Artifact
+
 Activity
+
 Relationship
 ```
 
-The control loop remains sufficient:
+The scenarios also demonstrate that an initial input does not necessarily constitute an established intended outcome. An input may be an outcome, a problem statement, an assumption, a constraint, a proposed implementation, an interpretation, an experience, or a mixture of these.
+
+This does not require a fifth primitive or a separate fundamental concept. The input and its interpretations can be represented as artifacts, their provenance and relationships can be preserved, and activities can be used to scrutinize, clarify, validate, reject, or refine the resulting understanding.
+
+The control loop therefore remains sufficient:
 
 ```text
 Assess
@@ -612,17 +673,45 @@ Update artifacts
 Reassess
 ```
 
+The scenarios also demonstrate that the control loop may need to be preceded by sufficient scrutiny of the initial input to establish a usable intended outcome:
+
+```text
+Input
+    ↓
+Scrutinize and interpret where necessary
+    ↓
+Establish intended outcome
+    ↓
+Assess
+    ↓
+Identify consequential gaps
+    ↓
+Determine what must be learned,
+decided, or changed
+    ↓
+Choose and perform activity
+    ↓
+Update artifacts
+    ↓
+Reassess
+```
+
+This does not constitute a new mandatory phase. The degree of scrutiny is proportional to the ambiguity, uncertainty, consequence, and cost of acting on a mistaken interpretation.
+
 The four invariants remain sufficient:
 
 ```text
 Persistence
+
 Outcome orientation
+
 Epistemic integrity
+
 Feedback
 ```
 
 The scenarios therefore support an important conclusion:
 
-> **The methodology is deliberately small enough to cover materially different product-development situations without turning each situation into another methodology rule.**
+> **The methodology is deliberately small enough to cover materially different product-development situations, including situations where the initial input does not yet clearly express the intended outcome, without turning each situation into another methodology rule.**
 
 The scenarios are examples of application, not additional rules.

@@ -1,7 +1,6 @@
-# Threadwright Methodology v0.4
+# Threadwright Methodology
 
 > **Threadwright is an implementation-agnostic methodology for developing and evolving products through persistent artifacts, explicit relationships, consequential-gap identification, useful activity, and continuous reassessment.**
-
 
 ## 1. Purpose
 
@@ -126,6 +125,31 @@ Relationships provide semantic structure and traceability without requiring sepa
 
 Every Change establishes an intended transformation and an intended outcome.
 
+An initial request, statement, or requirement does not necessarily establish that intended outcome accurately. Input may express:
+
+- an intended outcome
+- a problem
+- an assumption
+- a constraint
+- a proposed implementation
+- an interpretation
+- an experience
+- or a mixture of these
+
+Where the meaning of the input is ambiguous or consequential, it should be scrutinized sufficiently to establish what outcome is actually being pursued before the Change is framed around it.
+
+The required degree of scrutiny should be proportionate to factors such as:
+
+- ambiguity
+- uncertainty
+- consequence
+- reversibility
+- cost of acting on a mistaken interpretation
+
+An interpretation of input is itself knowledge about what the input appears to mean. It should remain distinguishable from the original input and should not be treated as authoritative merely because it has been recorded.
+
+The purpose is not to have the methodology determine what a person "really meant." Human judgment remains responsible for confirming, rejecting, or refining the interpretation.
+
 The Change may also define scope and other relevant properties.
 
 For example:
@@ -185,6 +209,8 @@ The fundamental loop is:
                        └───────────────↺
 ```
 
+The loop assumes that the Change has an established intended outcome. When an initial input does not yet establish that outcome sufficiently, scrutiny and clarification are part of the useful work required to establish the Change.
+
 ### 4.1 Assess the current state
 
 Determine what is currently known, decided, implemented, validated, unresolved, constrained, and uncertain.
@@ -222,6 +248,8 @@ Examples:
 - implement a capability
 - validate a performance requirement
 - determine whether an assumption remains valid
+- clarify an ambiguous or consequential input
+- determine whether a proposed solution actually addresses the intended outcome
 
 ### 4.5 Choose and perform activity
 
@@ -302,6 +330,8 @@ Similarly:
 
 > Successful implementation of a feature does not prove that the intended product outcome has been achieved.
 
+Interpretations of input are also subject to this distinction. An interpretation may be useful and well-supported without being the same thing as the original input or an established intended outcome.
+
 ---
 
 ## 7. Assurance and Proportionality
@@ -319,6 +349,8 @@ The methodology does not require maximum rigor everywhere.
 A low-consequence reversible decision may require little investigation.
 
 A high-consequence irreversible decision may require substantial evidence and assurance.
+
+The same proportionality applies when scrutinizing an initial input. Not every statement requires formal interpretation or clarification. Greater scrutiny is justified when ambiguity or uncertainty could materially change the Change or make acting on the wrong interpretation costly.
 
 The relevant question is:
 
@@ -346,6 +378,8 @@ New evidence may cause the team to:
 Historical artifacts remain valuable because they preserve why earlier conclusions were reached.
 
 A changed direction should therefore normally be represented rather than silently rewriting history.
+
+This applies to understanding the intended outcome as well as to knowledge about the product. As understanding changes, what the team is trying to achieve may itself change.
 
 ---
 
@@ -380,6 +414,8 @@ It does not require all work to occur in a single global sequence.
 
 **A Change must establish an intended transformation against which its current state and results can be assessed.**
 
+The intended outcome should not be assumed to be accurately established merely because an initial request or statement has been provided. Where necessary, the input should be scrutinized sufficiently to establish what outcome is actually being pursued.
+
 ### I3 — Epistemic integrity
 
 **The artifact state must not represent consequential knowledge, decisions, evidence, or results as more authoritative, certain, supported, applicable, or achieved than their basis justifies.**
@@ -388,6 +424,8 @@ This includes avoiding:
 
 - treating hypotheses as facts
 - treating proposals as authoritative decisions
+- treating interpretations as if they were the original input
+- treating an inferred intent as confirmed intent
 - overstating evidence
 - generalizing evidence beyond its applicability
 - representing implementation as outcome achievement
@@ -412,6 +450,7 @@ These are failures to maintain the methodology itself, such as:
 - losing connection to the intended outcome
 - overstating knowledge or evidence
 - hiding material contradictions
+- treating an interpretation as established without sufficient basis
 - failing to reassess after meaningful change
 
 ### Judgment failures
@@ -425,6 +464,7 @@ Examples:
 - choosing the wrong architecture
 - prioritizing the wrong opportunity
 - accepting an inappropriate business risk
+- incorrectly interpreting an ambiguous request
 
 The methodology improves the basis for judgment; it cannot guarantee that judgment is correct.
 
@@ -479,7 +519,7 @@ It must remain usable by humans without AI.
 
 The methodology can be summarized as:
 
-> **Maintain a persistent, connected representation of what we are trying to achieve and what we currently know; identify the consequential gaps between the current state and the intended outcome; choose and perform useful activities to address those gaps; preserve the resulting knowledge and decisions; and continually reassess the state as it changes.**
+> **Maintain a persistent, connected representation of what we are trying to achieve and what we currently know; where necessary, scrutinize the initial input to establish what outcome is actually being pursued; identify the consequential gaps between the current state and the intended outcome; choose and perform useful activities to address those gaps; preserve the resulting knowledge and decisions; and continually reassess the state as it changes.**
 
 The methodology remains deliberately small:
 

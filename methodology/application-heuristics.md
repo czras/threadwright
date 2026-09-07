@@ -2,7 +2,6 @@
 
 > These heuristics describe how humans can practically apply the Threadwright methodology. They are guidance, not additional methodology primitives.
 
-
 ## 1. Purpose
 
 The methodology defines what must remain true during product development. These heuristics describe how humans can practically apply it.
@@ -169,6 +168,33 @@ Hypothesis:
 
 Do not collapse these into a single unsupported statement.
 
+#### Distinguish input from interpretation
+
+An initial request or statement may not be the same thing as the intent underlying it.
+
+For example:
+
+```text
+Input:
+    We need a mobile app.
+
+Interpretation:
+    The requester appears to believe a mobile app is an
+    appropriate means of solving the problem.
+
+Candidate outcome:
+    Field workers need to access and update information
+    while away from their desks.
+```
+
+The interpretation and candidate outcome are not automatically authoritative.
+
+The useful question is:
+
+> What does this input represent, and what outcome is actually being pursued?
+
+Where the distinction could materially affect the Change, make the interpretation explicit and allow it to be confirmed, rejected, or refined.
+
 #### Distinguish proposal from decision
 
 ```text
@@ -214,6 +240,10 @@ When stakeholders or artifacts materially disagree, represent the disagreement u
 
 The heuristics work as a loop rather than a checklist.
 
+When the intended outcome is not already sufficiently established, first scrutinize the input enough to establish a usable understanding of what is being pursued.
+
+Then:
+
 ```text
 Current state
     ↓
@@ -236,6 +266,40 @@ Epistemic integrity applies throughout.
 
 ## 5. Common Failure Modes
 
+### Taking the input at face value
+
+> "We need a mobile app."
+
+and immediately treating the proposed implementation as the Change.
+
+Before deciding what to do with an input, ask:
+
+> **What does this input represent?**
+
+Consider:
+
+- What outcome is actually being pursued?
+- Is this a desired outcome or a problem statement?
+- Is this a proposed solution?
+- What assumptions are embedded in it?
+- What constraints are being expressed?
+- What remains uncertain?
+- Would a different interpretation materially change the Change?
+
+The goal is not to decide what the requester "really meant" on their behalf.
+
+The interpretation should remain explicit and provisional until there is sufficient basis to treat it as established.
+
+The required degree of scrutiny should be proportional to:
+
+- ambiguity
+- uncertainty
+- consequence
+- reversibility
+- cost of acting on a mistaken interpretation
+
+Do not turn every casual or low-consequence request into a formal analysis.
+
 ### Starting with implementation
 
 > "What should we code?"
@@ -245,6 +309,15 @@ before determining:
 > "What outcome are we trying to achieve, and what consequential gap currently prevents it?"
 
 Use H1.
+
+This failure mode is related to **Taking the input at face value**, but they are not the same:
+
+- **Taking the input at face value** asks whether the input has been correctly understood as an outcome, problem, constraint, proposal, or something else.
+- **Starting with implementation** asks whether the team is jumping from an established outcome to a solution without addressing the consequential gaps.
+
+The first concerns **establishing what we are trying to achieve**.
+
+The second concerns **deciding what to do about it**.
 
 ### Research without a decision
 
@@ -314,6 +387,12 @@ For example, two teams may identify the same gaps and rationally choose differen
 
 The methodology should make that judgment explicit and inspectable, not eliminate it.
 
+The same applies when interpreting an initial input.
+
+A team may form an interpretation of what a request means, but the methodology does not authorize the team to silently replace the source's stated input with its own interpretation.
+
+The purpose of scrutiny is to improve the basis for judgment, not to remove the need for judgment.
+
 ---
 
 ## 7. Practical Questions for a Team
@@ -321,15 +400,16 @@ The methodology should make that judgment explicit and inspectable, not eliminat
 At any point, a team can ask:
 
 1. **What outcome are we trying to achieve?**
-2. **What is currently true?**
-3. **What consequential gaps remain?**
-4. **Which gap matters most right now?**
-5. **What decision or action does it affect?**
-6. **What would we need to know or change to act responsibly?**
-7. **What activity would be most useful given its cost and dependencies?**
-8. **What did that activity actually establish?**
-9. **What changed in the artifact state?**
-10. **What needs to be reassessed now?**
+2. **Does the input actually establish that outcome, or are we interpreting it?**
+3. **What is currently true?**
+4. **What consequential gaps remain?**
+5. **Which gap matters most right now?**
+6. **What decision or action does it affect?**
+7. **What would we need to know or change to act responsibly?**
+8. **What activity would be most useful given its cost and dependencies?**
+9. **What did that activity actually establish?**
+10. **What changed in the artifact state?**
+11. **What needs to be reassessed now?**
 
 These questions are a practical application of the methodology, not additional methodology rules.
 
@@ -340,6 +420,8 @@ These questions are a practical application of the methodology, not additional m
 A team that remembers only this can still apply the methodology:
 
 > **What are we trying to achieve?**
+>
+> **Does the input actually establish that, or do we need to clarify what it represents?**
 >
 > **What prevents us from achieving it?**
 >
