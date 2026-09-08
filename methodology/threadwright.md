@@ -2,6 +2,17 @@
 
 > **Threadwright is infrastructure and methodology for the evolution of intent and knowledge.**
 
+## Foundations & Provenance
+
+Threadwright emerges from the synthesis of two distinct sources:
+
+- **The creator's lens** — a relatively stable way of engaging with reality characterized by preferences for simplicity, explicitness, adaptability, economy, interconnectedness, and learning through observation
+- **Homo Sapiens Agenticus (HSA)** — a thesis on human–agent cognitive partnership exploring complementary capabilities
+
+Threadwright is the synthesis of these two into a practical methodology. The three layers (lens, HSA, Threadwright) remain distinct and evolve through practice and observation. Provenance is separated from prescription — practitioners need not share the creator's lens or adopt HSA.
+
+See [`foundations.md`](foundations.md) for the complete provenance, evolutionary relationship, and non-goals.
+
 ## 1. Purpose
 
 Threadwright provides a minimal, implementation-agnostic way to maintain and evolve the knowledge and reasoning surrounding product development and other forms of change.

@@ -82,3 +82,5 @@ Homo Sapiens Agenticus
 ```
 
 Other technological or organizational responses are possible. HSA should remain meaningful even if Threadwright changes substantially or does not become the eventual implementation.
+
+See [`foundations.md`](foundations.md) for the full provenance including the creator's lens, the three-layer model, and the evolutionary feedback relationship.
