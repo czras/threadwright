@@ -9,3 +9,19 @@ The highest-value activity may instead be a customer interview, benchmark, proto
 Consider consequence, uncertainty, expected information or progress, downstream rework, dependencies, reversibility, cost, and available capacity.
 
 There is no required scoring formula.
+
+## Related Heuristics
+
+- [address-consequential-gaps.md](address-consequential-gaps.md) — What gaps make work useful
+- [choose-knowledge-action.md](choose-knowledge-action.md) — Optimization framework for action selection
+- [dynamic-think-experience-boundary.md](dynamic-think-experience-boundary.md) — Mode selection for useful work
+
+## Related Scenarios
+
+- [Optimization Invariant (I5) Stress Test](../scenarios/optimization-invariant-i5.md) — Choosing between model, load test, chaos experiment
+- [Dynamic Think/Experience Boundary Shift](../scenarios/dynamic-think-experience-boundary.md) — Useful work changes as boundary shifts
+
+## References
+
+- [threadwright.md §6, §8](../threadwright.md) — Consequential gaps, I5 Optimization
+- [ASSESSMENT-0008 §5, 7](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md#5-emerging-central-formulation) — Central formulation, cost of learning

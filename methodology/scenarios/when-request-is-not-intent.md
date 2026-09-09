@@ -25,3 +25,20 @@ The same pattern occurs in product and software development. “We need a mobile
 Do not assume the initial input is the intended outcome. Input may be an outcome, problem, assumption, constraint, interpretation, proposed implementation, experience, or a mixture of these.
 
 Where the distinction is consequential, scrutinize the input and establish the intended outcome before allowing the initial framing to determine the Change. The purpose is not to replace the person's intent with the practitioner's interpretation; interpretations remain open to confirmation, rejection, and refinement.
+
+## Related Heuristics
+
+- [Evolve Intent from Messy Input](../heuristics/evolve-intent-from-messy-input.md)
+- [H2 — Frame Uncertainty Around Decisions](../heuristics/frame-uncertainty-around-decisions.md)
+- [H1 — Address Consequential Gaps](../heuristics/address-consequential-gaps.md)
+
+## Related Scenarios
+
+- [Evolving Intent from Messy Input](evolve-intent-from-messy-input.md) — Extended worked example
+- [Greenfield Product Idea](greenfield-product-idea.md) — Starting from idea
+
+## References
+
+- [threadwright.md §3, §4](../threadwright.md) — Intent, control loop
+- [ASSESSMENT-0009 §4](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#4-messy-input-and-evolving-intent) — Messy input and evolving intent
+- [ASSESSMENT-0003](artifacts/ASSESSMENT-0003_input-scrutiny-and-extraction.md) — Input scrutiny

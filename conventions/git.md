@@ -22,12 +22,15 @@ When the change originates from a GitHub issue or other work item, reference tha
 Refs: #123
 ```
 
-When a commit directly implements or records the conclusion of an artifact, the relevant artifact may also be referenced:
+When a commit directly implements or records the conclusion of an artifact, reference the consequential artifact(s) — the one(s) that motivated or drove the change (with scope if cross-scope):
 
 ```text
 Refs: #123
-Artifact: ASSESSMENT-0006
+Artifacts:
+  methodology/ASSESSMENT-0006
 ```
+
+Do not list artifacts that were modified only as a downstream consequence (e.g., relationship updates, derived artifacts, index files). The PR and artifact relationships capture the full traceability.
 
 The commit diff is authoritative for the concrete repository change. Commit messages should not duplicate information that can be understood directly from the diff.
 
@@ -84,7 +87,7 @@ The resulting branch is then merged using a non-fast-forward merge:
 git merge --no-ff <branch>
 ```
 
-Merge commits provide discrete milestones on the main or release branches. The merge commit should reference the artifact that directly concluded the reasoning leading to the repository change.
+Merge commits provide discrete milestones on the main or release branches. The merge commit should reference the consequential artifact(s) that directly concluded the reasoning leading to the repository change.
 
 ## Quality gate
 

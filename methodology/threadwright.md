@@ -13,6 +13,14 @@ Threadwright is the synthesis of these two into a practical methodology. The thr
 
 See [`foundations.md`](foundations.md) for the complete provenance, evolutionary relationship, and non-goals.
 
+## Central Formulation
+
+Threadwright optimizes for reducing consequential uncertainty by selecting knowledge-generating actions that balance expected uncertainty reduction against total cost of obtaining the knowledge.
+
+> **Given a consequential knowledge gap, choose the action that provides the greatest expected reduction in consequential uncertainty for the least total cost.**
+
+This formulation emerged from practice and was validated through [ASSESSMENT-0008](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md) and [ASSESSMENT-0009](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md). The methodology does not prescribe a particular mechanism for learning; it provides structure for choosing among them.
+
 ## 1. Purpose
 
 Threadwright provides a minimal, implementation-agnostic way to maintain and evolve the knowledge and reasoning surrounding product development and other forms of change.
@@ -21,73 +29,136 @@ It treats development as an evolving system of knowledge, intent, decisions, and
 
 Its practical question is:
 
-> Given what we are trying to achieve and what we currently know, what should we do next?
+> Given what we are trying to achieve and what we currently know, what is the most effective way to learn what we need to know next?
 
 Threadwright does not prescribe how a product should be implemented. It provides structure around the reasoning and knowledge that surround implementation.
 
-## 2. Core model
+## 2. Core Model
 
-Threadwright has four fundamental concepts:
+Threadwright has five fundamental concepts:
 
 - **Change** — an intended transformation or outcome.
 - **Artifact** — persistent knowledge or state.
 - **Activity** — work performed to learn, decide, create, or change.
 - **Relationship** — a semantic connection between artifacts, activities, and Changes.
+- **Consequential Gap** — uncertainty that can materially affect a decision, outcome, commitment, risk, investment, or implementation.
 
 These concepts are intentionally small. More specific concepts can emerge where useful without becoming fundamental elements of the methodology.
+
+For practical application of these concepts, see the [heuristics](../heuristics/README.md): [H1 — Address Consequential Gaps](../heuristics/address-consequential-gaps.md), [H2 — Frame Uncertainty Around Decisions](../heuristics/frame-uncertainty-around-decisions.md), [H3 — Choose Useful Work](../heuristics/choose-useful-work.md), [H4 — Reassess](../heuristics/reassess.md), and the cross-cutting [Epistemic Integrity](../heuristics/epistemic-integrity.md).
+
+### Knowledge-Generating Actions
+
+Threadwright does not prescribe a particular mechanism for learning. The choice of mechanism is itself part of the optimization problem.
+
+**Manufactured knowledge** — constructed through reasoning, abstraction, modelling, calculation, analysis, synthesis of existing knowledge, research, simulation, or hypothesis construction.
+
+**Experiential knowledge** — generated through interaction with reality: prototyping, experimentation, testing, deployment, observation, measurement, customer interaction, or operational experience.
+
+The dynamic boundary between manufactured and experiential knowledge is determined by the current uncertainty, available options, costs, risks, and expected knowledge gain.
 
 ## 3. Intent
 
 Intent is an evolving property of a Change: what is currently understood to be pursued, given the knowledge available at that point.
 
-An initial request or statement does not necessarily establish intent. It may express an outcome, problem, assumption, constraint, proposed implementation, interpretation, experience, or a mixture of these.
+An initial request or statement does not necessarily establish intent. It may express an outcome, problem, assumption, constraint, proposed implementation, interpretation, experience, or a mixture of these — what [ASSESSMENT-0009](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md) calls "messy input."
 
 Where ambiguity or consequences warrant it, the input should be scrutinized sufficiently to establish the outcome actually being pursued. The degree of scrutiny should be proportional to ambiguity, uncertainty, consequence, reversibility, and the cost of acting on a mistaken interpretation.
 
+The process moves from messy input → formulation → consequential gaps → knowledge-generating action → evidence → updated intent. This progression is detailed in [ASSESSMENT-0009 §4](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#4-messy-input-and-evolving-intent).
+
+For practical guidance on evolving intent from messy input, see [Evolve Intent from Messy Input](../heuristics/evolve-intent-from-messy-input.md) and the scenario [Evolving Intent from Messy Input](../scenarios/evolve-intent-from-messy-input.md).
+
 Interpretations remain explicit and subject to human judgment.
 
-## 4. Control loop
+## 4. Control Loop
 
-Threadwright operates through continuous reassessment:
+Threadwright operates through continuous adaptive reassessment:
 
 ```text
-Intended Outcome
-      ↓
-Current State
-      ↓
-Consequential Gaps
-      ↓
-What must be learned, decided, or changed?
-      ↓
-Activity
-      ↓
-Updated Artifact State
-      ↓
-Reassess
-      ↺
+Messy Input / Initial Intent
+       ↓
+Formulate & Scrutinize Intent
+       ↓
+Identify Consequential Gaps
+       ↓
+Select Knowledge-Generating Action
+       ↓
+Execute → Evidence
+       ↓
+Update Knowledge & Intent
+       ↓
+Reassess Gaps → Repeat
 ```
 
-The loop is open-ended. Reassessment may reveal that the intended outcome should change, the current understanding was incomplete, a different activity is required, an assumption was wrong, or no further action is justified.
+The loop is open-ended and **adaptive**: the optimal next action depends on the current epistemic state. Reassessment may reveal that the intended outcome should change, the current understanding was incomplete, a different knowledge-generating action is required, an assumption was wrong, or no further action is justified.
 
-## 5. Artifact system
+This adaptive character is a structural consequence of the optimization formulation — see [ASSESSMENT-0009 §10](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#10-adaptive).
+
+For practical application, see [H4 — Reassess](../heuristics/reassess.md) and the scenario [Dynamic Think/Experience Boundary Shift](../scenarios/dynamic-think-experience-boundary.md).
+
+## 5. Artifact System
 
 Artifacts are the persistent units through which Threadwright maintains knowledge and reasoning.
 
 They may represent requirements, decisions, assessments, observations, constraints, assumptions, interpretations, designs, specifications, research findings, evidence, implementation, validation results, or other relevant knowledge and state.
 
+Artifacts should distinguish between **manufactured knowledge** (constructed through reasoning, analysis, simulation) and **experiential knowledge** (generated through interaction with reality), as their epistemic warrant differs — see [ASSESSMENT-0008 §6](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md#6-knowledge-generating-actions).
+
+For guidance on maintaining epistemic integrity in artifacts, see [Epistemic Integrity](../heuristics/epistemic-integrity.md) and the scenario [Manufactured vs Experiential Knowledge in Artifacts](../scenarios/manufactured-vs-experiential-artifacts.md).
+
 Relationships provide semantic structure and traceability. Examples include `supports`, `derived from`, `satisfies`, `implements`, `verifies`, `depends on`, `affects`, `contradicts`, and `supersedes`.
 
 The exact artifact taxonomy and relationship vocabulary are allowed to evolve as Threadwright is applied.
 
-## 6. Consequential gaps and useful activity
+## 6. Consequential Gaps and Useful Activity
 
 A gap is consequential when it can materially affect the intended outcome, invalidate downstream work, create unacceptable consequences, block progress, create significant rework, or undermine a consequential decision.
 
-Not every gap requires research, and not every activity needs to be formalized. The appropriate activity depends on the current state, consequences, uncertainty, dependencies, cost, reversibility, and available capacity.
+Not every uncertainty deserves equal attention. The relevant progression is: *unknown → relevant unknown → consequential uncertainty* — see [ASSESSMENT-0009 §7](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#7-consequential-uncertainty-remains-the-important-target).
 
-Useful activities may include research, interviewing, analysis, design, implementation, prototyping, testing, validation, review, investigation, or decision-making.
+The objective is not to know everything. It is to know **what needs to be known next**.
 
-## 7. Consequential decisions and evidence
+For practical guidance on identifying and addressing consequential gaps, see [H1 — Address Consequential Gaps](../heuristics/address-consequential-gaps.md) and [H2 — Frame Uncertainty Around Decisions](../heuristics/frame-uncertainty-around-decisions.md).
+
+### Cost of Learning
+
+"Least cost" should not be interpreted as merely financial cost. The cost of reducing uncertainty can include:
+
+- money, engineering effort, time, opportunity cost
+- cognitive effort, operational disruption, physical resources
+- risk, irreversibility, ethical cost, reputational cost
+
+Likewise, the value of an action is not simply the amount of information it produces. The relevant quantity is **consequential knowledge**: knowledge that meaningfully changes what can be decided or done — see [ASSESSMENT-0008 §7](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md#7-the-cost-of-learning).
+
+A useful conceptual relationship:
+
+> **Knowledge acquisition value ≈ consequential uncertainty reduced / total cost of obtaining the knowledge**
+
+### Selecting Knowledge-Generating Actions
+
+Given a consequential gap, choose the action that provides the greatest expected reduction in consequential uncertainty for the least total cost. The action may be any knowledge-generating mechanism:
+
+**Manufactured knowledge actions:**
+- reason, research, analyse, model, calculate, simulate
+- inspect existing knowledge, consult experts, construct hypotheses
+
+**Experiential knowledge actions:**
+- prototype, experiment, test, interview, deploy
+- observe, measure, interact with users, operate the system
+- expose an idea to reality
+
+The dynamic boundary between manufactured and experiential knowledge is not merely a property of a domain — it moves within the same project as knowledge changes — see [ASSESSMENT-0008 §3](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md#3-the-dynamic-thinklearn-boundary) and [ASSESSMENT-0009 §6](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#6-the-thinkexperience-boundary-is-dynamic).
+
+A useful heuristic:
+
+> **When abstraction stops producing useful knowledge, move closer to reality.**
+
+This is the principle of **forward deployment** — see [ASSESSMENT-0008 §9](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md#9-forward-deployment) and [ASSESSMENT-0009 §9](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#9-forward-deployment-as-a-special-case).
+
+For detailed guidance on selecting actions, see [Choose Knowledge-Generating Action](../heuristics/choose-knowledge-action.md) and [Dynamic Think/Experience Boundary](../heuristics/dynamic-think-experience-boundary.md). For a worked example, see the scenario [Optimization Invariant (I5) Stress Test](../scenarios/optimization-invariant-i5.md).
+
+## 7. Consequential Decisions and Evidence
 
 Consequential decisions should remain represented when their consequences are part of the development state.
 
@@ -95,33 +166,63 @@ The methodology does not require certainty. When uncertainty remains, the respon
 
 Evidence should support the claims or decisions for which it is used and should not be generalized beyond its applicability.
 
-## 8. Four invariants
+Evidence should be tagged with its epistemic origin: manufactured (reasoning, analysis, simulation) or experiential (observation, experiment, deployment). This distinction matters because manufactured knowledge carries assumptions that may not hold in reality, while experiential knowledge is grounded but may be context-specific — see [ASSESSMENT-0008 §5](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md#5-emerging-central-formulation) and [ASSESSMENT-0009 §5](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#5-manufactured-and-evolved-knowledge).
+
+For maintaining epistemic integrity in decisions and evidence, see [Epistemic Integrity](../heuristics/epistemic-integrity.md) and the scenario [Manufactured vs Experiential Knowledge in Artifacts](../scenarios/manufactured-vs-experiential-artifacts.md).
+
+## 8. Five Invariants
 
 ### I1 — Persistence
 
 Meaningful development work must leave its relevant results in persistent artifacts.
 
-### I2 — Outcome orientation
+### I2 — Outcome Orientation
 
 A Change must establish an intended transformation against which its current state and results can be assessed.
 
-### I3 — Epistemic integrity
+### I3 — Epistemic Integrity
 
 The artifact state must not represent consequential knowledge, decisions, evidence, or results as more authoritative, certain, supported, applicable, or achieved than their basis justifies.
 
-This includes distinguishing input from interpretation, hypothesis from fact, proposal from decision, implementation from outcome achievement, and accepted uncertainty from hidden uncertainty.
+This includes distinguishing input from interpretation, hypothesis from fact, proposal from decision, implementation from outcome achievement, accepted uncertainty from hidden uncertainty, and **manufactured knowledge from experiential knowledge**.
+
+For practical guidance, see [Epistemic Integrity](../heuristics/epistemic-integrity.md).
 
 ### I4 — Feedback
 
 After meaningful work or material change, the current state must be reassessed and subsequent work must respond to what that reassessment reveals.
 
-## 9. Human judgment
+For practical guidance, see [H4 — Reassess](../heuristics/reassess.md).
+
+### I5 — Optimization
+
+Given a consequential knowledge gap, the next action should be selected to maximize expected consequential uncertainty reduction per total cost of obtaining that knowledge.
+
+This invariant operationalizes the central formulation. It prevents both over-manufacturing (excessive analysis when reality could answer cheaply) and premature exposure to reality (learning through consequences when cheaper knowledge-generation was available) — see [ASSESSMENT-0008 §8](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md#8-why-the-boundary-matters).
+
+For practical application, see [Choose Knowledge-Generating Action](../heuristics/choose-knowledge-action.md), [Dynamic Think/Experience Boundary](../heuristics/dynamic-think-experience-boundary.md), and the scenario [Optimization Invariant (I5) Stress Test](../scenarios/optimization-invariant-i5.md).
+
+## 9. Human Judgment
 
 Threadwright provides a structure for reasoning; it does not replace human judgment.
 
 It can identify consequential gaps, preserve evidence, and make relationships visible. It cannot determine whether a strategy, market, architecture, objective, risk tolerance, or interpretation is correct.
 
 > **The methodology structures human judgment; it does not replace it.**
+
+### Autonomy vs. Automation
+
+Threadwright may be **autonomous** in the sense that, given an intent, it can determine and pursue intermediate knowledge-generating actions without requiring an external actor to prescribe every step.
+
+This does **not** imply that:
+- humans disappear
+- all actions are automated
+- agents perform every action
+- human judgment is removed
+
+Humans remain active participants in the machinery. Automation concerns *who or what performs a prescribed action*; autonomy concerns *who or what determines what should happen next in pursuit of the intent* — see [ASSESSMENT-0009 §11](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#11-autonomous-does-not-mean-automated).
+
+The human judgment principle applies across all heuristics — see [H1](../heuristics/address-consequential-gaps.md), [H2](../heuristics/frame-uncertainty-around-decisions.md), [H3](../heuristics/choose-useful-work.md), [H4](../heuristics/reassess.md), and [Epistemic Integrity](../heuristics/epistemic-integrity.md).
 
 ## 10. Boundaries
 
@@ -142,7 +243,15 @@ Threadwright deliberately does not prescribe:
 
 The methodology must remain usable by humans without AI or specialized tooling.
 
-## 11. Threadwright as infrastructure
+### Relationship to Homo Sapiens Agenticus (HSA)
+
+**HSA concerns how humans and agents can complement each other to expand human agency.** **Threadwright concerns how intent and knowledge can evolve toward outcomes.**
+
+The concepts are orthogonal. Threadwright may provide machinery through which aspects of HSA can be realized, but Threadwright does not exist to fulfill the HSA vision, nor is it reducible to HSA — see [ASSESSMENT-0009 §12](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#12-relationship-to-homo-sapiens-agenticus) and [`homo-sapiens-agenticus.md`](homo-sapiens-agenticus.md).
+
+For the foundational separation of layers, see [`foundations.md`](foundations.md).
+
+## 11. Threadwright as Infrastructure
 
 The methodology points toward infrastructure that can make persistent, connected knowledge and intent practical at scale without embedding domain-specific product knowledge into the infrastructure itself.
 
@@ -158,8 +267,41 @@ Such infrastructure can support:
 
 Domain knowledge may come from humans, specialized agents, or domain-specific systems. Threadwright's concern is the structure and evolution surrounding that knowledge and intent.
 
+### Recursive Self-Application
+
+A particularly important property is that **Threadwright learns from its own use** — see [ASSESSMENT-0008 §11](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md#11-threadwrights-recursive-property) and [ASSESSMENT-0009 §14](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#14-recursive-self-application).
+
+Applying Threadwright creates experiences about which artifacts are useful, which practices create value or friction, which heuristics work, and which assumptions fail. Those experiences become knowledge that can change Threadwright itself.
+
+The resulting loop:
+
+> **Apply Threadwright → experience → learn → evolve Threadwright → apply again**
+
+Therefore Threadwright is not merely a methodology for managing an external evolutionary process. It can itself evolve through the process it enables.
+
+> **Threadwright is both an instrument for knowledge evolution and an object of knowledge evolution.**
+
+For a worked example of recursive self-application, see the scenario [Recursive Self-Application](../scenarios/recursive-self-application.md) and [H4 — Reassess](../heuristics/reassess.md#recording-reassessment).
+
 ## 12. Summary
 
 Threadwright can be summarized as:
 
-> **Maintain a persistent, connected representation of what we are trying to achieve and what we currently know; where necessary, scrutinize the initial input to establish what outcome is actually being pursued; identify consequential gaps; choose and perform useful activities; preserve the resulting knowledge and decisions; and continually reassess the state as it changes.**
+> **Maintain a persistent, connected representation of what we are trying to achieve and what we currently know; where necessary, scrutinize the initial input to establish what outcome is actually being pursued; identify consequential gaps; select knowledge-generating actions that maximize consequential uncertainty reduction per cost; preserve the resulting knowledge and decisions; and continually reassess the state as it changes.**
+
+Threadwright is adaptive — the machinery changes its strategy as the epistemic state changes. It is potentially autonomous — given intent, it can determine intermediate actions without requiring every step to be externally prescribed, while humans remain participants in the process. And it is recursive — it learns from its own application.
+
+The current strongest formulation remains an **emerging hypothesis** to be tested through continued application — see [ASSESSMENT-0008 §15](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md#15-emerging-hypothesis) and [ASSESSMENT-0009 §15](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#15-revised-central-formulation).
+
+### Quick Reference
+
+| Concept | Methodology | Heuristic | Scenario |
+|---------|-------------|-----------|----------|
+| Consequential Gaps | [§6](#6-consequential-gaps-and-useful-activity) | [H1](../heuristics/address-consequential-gaps.md), [H2](../heuristics/frame-uncertainty-around-decisions.md) | [Optimization I5](../scenarios/optimization-invariant-i5.md) |
+| Knowledge Actions | [§6](#6-consequential-gaps-and-useful-activity) | [Choose Action](../heuristics/choose-knowledge-action.md) | [Dynamic Boundary](../scenarios/dynamic-think-experience-boundary.md) |
+| Think/Experience Boundary | [§6](#6-consequential-gaps-and-useful-activity) | [Dynamic Boundary](../heuristics/dynamic-think-experience-boundary.md) | [Dynamic Boundary](../scenarios/dynamic-think-experience-boundary.md) |
+| Intent Evolution | [§3](#3-intent) | [Evolve Intent](../heuristics/evolve-intent-from-messy-input.md) | [Messy Input](../scenarios/evolve-intent-from-messy-input.md) |
+| Reassessment | [§4](#4-control-loop) | [H4 Reassess](../heuristics/reassess.md) | [Recursive](../scenarios/recursive-self-application.md) |
+| Epistemic Integrity | [§5](#5-artifact-system), [§7](#7-consequential-decisions-and-evidence) | [Cross-cutting](../heuristics/epistemic-integrity.md) | [Artifacts](../scenarios/manufactured-vs-experiential-artifacts.md) |
+| I5 Optimization | [§8](#8-five-invariants) | [Choose Action](../heuristics/choose-knowledge-action.md) | [Optimization I5](../scenarios/optimization-invariant-i5.md) |
+| Recursive Self-Application | [§11](#11-threadwright-as-infrastructure) | [H4 Reassess](../heuristics/reassess.md#recording-reassessment) | [Recursive](../scenarios/recursive-self-application.md) |

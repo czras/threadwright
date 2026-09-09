@@ -57,14 +57,17 @@ The synthesis of the creator's lens and the HSA understanding into a practical, 
 **Threadwright is:**
 - Infrastructure and methodology for the evolution of intent and knowledge
 - A response to problems/opportunities compatible with HSA
-- Structured around four concepts (Change, Artifact, Activity, Relationship) and a control loop
+- Structured around five concepts (Change, Artifact, Activity, Relationship, Consequential Gap) and an adaptive control loop
 - Deliberately boundary-limited (does not prescribe lifecycle, roles, tooling, etc.)
+- An optimization approach for reducing consequential uncertainty — see [ASSESSMENT-0008](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md) and [ASSESSMENT-0009](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md)
 
 **Threadwright is not:**
 - A direct implementation of HSA
 - A codification of the creator's preferences
 - A product implementation of HSA
 - Identical to HSA
+
+For the complete methodology, see [`threadwright.md`](threadwright.md). For practical heuristics, see [`heuristics/README.md`](heuristics/README.md). For test scenarios, see [`scenarios/README.md`](scenarios/README.md).
 
 ---
 
@@ -87,6 +90,10 @@ Observation (evidence from practice)
     ↓
 Refinement (changes to any layer)
     ↺
+         ↑
+         └── Threadwright learns from its own use (recursive self-application)
+             [ASSESSMENT-0008 §11](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md#11-threadwrights-recursive-property)
+             [ASSESSMENT-0009 §14](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md#14-recursive-self-application)
 ```
 
 **Key properties:**
@@ -94,6 +101,9 @@ Refinement (changes to any layer)
 - Practice can provide evidence that changes HSA understanding, changes Threadwright, or reveals something new about the lens
 - The loop is continuous — there is no "final" state
 - Observation precedes naming; structure follows utility
+- **Threadwright is both an instrument for knowledge evolution and an object of knowledge evolution** — it evolves through its own application
+
+For the recursive self-application in practice, see the scenario [Recursive Self-Application](../scenarios/recursive-self-application.md) and [H4 — Reassess](../heuristics/reassess.md#recording-reassessment).
 
 ---
 
@@ -117,3 +127,23 @@ This foundation explains **why Threadwright has the character it does**. It does
 The creator's personal site emerged from raw material (CV, running history, fragments) placed into Markdown and explored/evolved through interaction with an agent while building the site.
 
 This reinforces: **observe first, name later** — the lens can be discovered through artifacts and choices that emerge from working, not only described beforehand.
+
+## Provenance of Core Formulation
+
+The central optimization formulation emerged through a documented sequence:
+
+1. **[ASSESSMENT-0008](artifacts/ASSESSMENT-0008_manufactured-vs-evolved.md)** — Emerged from applying Threadwright across multiple real contexts. Observed the manufactured vs. evolved knowledge distinction, refined to dynamic think/experience boundary, formulated as optimization problem.
+
+2. **[ASSESSMENT-0009](artifacts/ASSESSMENT-0009_assessment-of-ASSESSMENT-0008.md)** — Second-order assessment validating ASSESSMENT-0008 against scientific research practice. Strengthened core hypothesis, added refinements: messy input → formulation, adaptive character, autonomy vs. automation distinction, HSA orthogonality, general epistemic machinery framing.
+
+3. **[RESEARCH-0000](artifacts/RESEARCH-0000_evolutionary-computation.md)** — Research direction exploring whether evolutionary computation and related fields (active learning, information theory, decision theory, experimental design, reinforcement learning) provide useful mechanisms for implementing the optimization. Currently reference only; not integrated into methodology.
+
+This sequence demonstrates the recursive property: **Threadwright was used to develop Threadwright**.
+
+### Heuristics and Scenarios Derived from This Provenance
+
+| Assessment | Heuristics | Scenarios |
+|------------|------------|-----------|
+| ASSESSMENT-0008 (manufactured vs evolved) | [Choose Knowledge Action](../heuristics/choose-knowledge-action.md), [Dynamic Think/Experience Boundary](../heuristics/dynamic-think-experience-boundary.md) | [Dynamic Boundary Shift](../scenarios/dynamic-think-experience-boundary.md), [Optimization I5](../scenarios/optimization-invariant-i5.md) |
+| ASSESSMENT-0009 (assessment of 0008) | [Evolve Intent from Messy Input](../heuristics/evolve-intent-from-messy-input.md), updated [H1](../heuristics/address-consequential-gaps.md), [H4](../heuristics/reassess.md) | [Evolve Intent](../scenarios/evolve-intent-from-messy-input.md), [Recursive Self-Application](../scenarios/recursive-self-application.md) |
+| Both | Updated [Epistemic Integrity](../heuristics/epistemic-integrity.md) | [Manufactured vs Experiential Artifacts](../scenarios/manufactured-vs-experiential-artifacts.md) |
