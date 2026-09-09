@@ -66,6 +66,9 @@ These are directions for exploration, not a committed product roadmap.
 
 The conceptual and methodological body of Threadwright: HSA, Threadwright, the methodology itself, heuristics, scenarios, and the artifacts produced while developing the methodology.
 
+- [`methodology/heuristics/README.md`](methodology/heuristics/README.md) — Reusable reasoning guidance for applying the methodology
+- [`methodology/scenarios/README.md`](methodology/scenarios/README.md) — Concrete situations demonstrating and challenging the methodology
+
 ### `conventions/`
 
 Conventions for developing and maintaining this project. They describe repository and artifact-management practices used by the project itself. They support the implementation and evolution of Threadwright but are **not part of the Threadwright conceptual model**.
@@ -76,7 +79,7 @@ The distinction is intentional: conventions are about **how this project is deve
 
 Project-level identity and brand material. Brand names, marks, and other reserved identity material are not automatically licensed under either repository content license.
 
-## License
+## Licensing
 
 Threadwright distinguishes between **software** and **intellectual material** when licensing repository contents.
 
