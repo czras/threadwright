@@ -24,7 +24,19 @@ The reviewer should consider the resulting methodology as a whole rather than li
 
 ## Activity
 
-### 1. Understand the Change
+### 1. Establish the Review Scope
+
+Determine precisely what evidence is in scope before evaluating the methodology.
+
+- Identify the current branch and its target/main branch.
+- Establish the complete set of **committed changes on the current branch relative to main**.
+- Treat the complete branch delta as the review subject, rather than only the latest commit.
+- Explicitly identify uncommitted changes and exclude them from the review.
+- Verify that the resulting evidence set matches the requested review scope before proceeding.
+
+Do not infer that the latest commit represents the complete change under review.
+
+### 2. Understand the Change
 
 Determine:
 
@@ -35,7 +47,9 @@ Determine:
 
 Do not assume that the implementation of a change fully represents its intended meaning. Use the related artifacts and commit context to reconstruct that meaning.
 
-### 2. Identify the Impact
+Do not evaluate individual files in isolation. Establish the intended conceptual change and its relationship to the existing methodology.
+
+### 3. Identify the Impact
 
 Determine which parts of the methodology are affected, including:
 
@@ -52,7 +66,7 @@ Determine which parts of the methodology are affected, including:
 
 Consider both direct and indirect effects.
 
-### 3. Review Methodological Coherence
+### 4. Review Methodological Coherence
 
 Determine whether the resulting methodology remains internally coherent.
 
@@ -66,7 +80,7 @@ Look for:
 - artifacts whose meaning is no longer consistent with the methodology;
 - relationships that have become incorrect or misleading.
 
-### 4. Review Epistemic Integrity
+### 5. Review Epistemic Integrity
 
 Apply [I3 — Epistemic Integrity](../threadwright.md#i3--epistemic-integrity) and [Epistemic Integrity](../heuristics/epistemic-integrity.md) to the change itself. Determine whether it preserves appropriate distinctions between:
 
@@ -81,7 +95,7 @@ Check whether generated, inferred, or assumed knowledge has unintentionally acqu
 
 Preserve provenance where it materially contributes to understanding.
 
-### 5. Review Interconnectedness
+### 6. Review Interconnectedness
 
 Determine which relationships created or affected by the change are useful.
 
@@ -97,7 +111,9 @@ Remove relationships that merely demonstrate relatedness or create cognitive noi
 
 Do not optimize for the number of relationships exposed to the reader.
 
-### 6. Review Cognitive Load and Compactness
+Consider the reader's journey through the methodology, not merely whether the relevant files exist.
+
+### 7. Review Cognitive Load and Compactness
 
 Review the resulting methodology from the reader's perspective.
 
@@ -117,7 +133,7 @@ Compress deliberately where possible, per [Generate Broadly, Compress Deliberate
 
 Compactness does not mean minimizing the amount of information. Preserve useful knowledge, relationships, and context when removing them would reduce comprehension or utility.
 
-### 7. Review Consequences
+### 8. Review Consequences
 
 Consider consequences that are not immediately visible in the changed files.
 
@@ -134,7 +150,7 @@ Ask:
 
 Do not introduce solutions for hypothetical future complexity without evidence that the complexity exists.
 
-### 8. Review Boundaries
+### 9. Review Boundaries
 
 Verify that the change preserves methodological boundaries.
 
@@ -145,7 +161,7 @@ In particular:
 - public material does not reference, expose, or imply private material;
 - implementation mechanisms do not become accidental methodological requirements.
 
-### 9. Compress and Integrate
+### 10. Compress and Integrate
 
 Where the review identifies unnecessary complexity, improve the resulting methodology rather than merely reporting the problem.
 
@@ -160,7 +176,7 @@ Integration may include:
 
 Do not compress mechanically. The objective is a coherent and useful methodology, not a smaller repository.
 
-### 10. Reassess the Result
+### 11. Reassess the Result
 
 After review and any resulting changes, reassess the methodology as a whole.
 
@@ -174,39 +190,49 @@ Determine whether the resulting state is:
 - understandable to its intended reader;
 - consistent with Threadwright's principles.
 
-## Output
+## Report
 
-The activity produces a review result containing:
+Produce a concise report containing:
 
 ### Change Understanding
 
-A concise statement of what the change does and why it exists.
+What the reviewed change introduces and why it matters.
 
 ### Findings
 
-Issues discovered during review, including their significance and affected methodological knowledge.
+The significant issues, strengths, relationships, and consequences discovered.
 
 ### Changes Made
 
-Any modifications made as a consequence of the review and the reasoning behind them.
+Corrections made during the review and their rationale.
 
 ### Relationships
 
-Important relationships retained, added, changed, or removed, with justification where useful.
+Important relationships between the new material and existing methodology.
 
 ### Unresolved Questions
 
-Consequential uncertainties that could not be resolved from available evidence.
+Questions for which the available evidence does not yet justify a methodological decision.
 
 ### Assessment
 
-An overall assessment of the resulting methodology and whether the change should be considered ready.
+An overall assessment of the change and whether it is ready to proceed.
 
 The assessment should distinguish between:
 
 - issues requiring correction;
 - observations worth monitoring;
 - unresolved questions that do not currently block the change.
+
+## Scope Boundary
+
+The review must distinguish between the evidence being reviewed and other work present in the repository.
+
+Committed changes within the established branch delta are in scope.
+
+Uncommitted changes are out of scope unless explicitly included in the review request.
+
+The reviewer must establish and verify this boundary before reasoning about the change.
 
 ## Completion Criteria
 

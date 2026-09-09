@@ -30,7 +30,7 @@ When generation is cheap, generate broadly before selecting what should remain.
 
 Broad generation can expose possibilities, relationships, and structures that would otherwise remain undiscovered. Selection and compression should then remove cognitive noise, redundancy, and unnecessary complexity without destroying useful information.
 
-Compactness is not minimalism. The objective is not the smallest possible result, but the greatest useful value and comprehension for the cognitive cost. [Methodology Change Review](activities/methodology-change-review.md) applies this when compressing a methodology change.
+Compactness is not minimalism. The objective is not the smallest possible result, but the greatest useful value and comprehension for the cognitive cost. See [H9 — Generate Broadly, Compress Deliberately](heuristics/generate-broadly-compress-deliberately.md) for operational detail and review questions.
 
 ## Move Toward Reality When Abstraction Stops Producing Knowledge
 
