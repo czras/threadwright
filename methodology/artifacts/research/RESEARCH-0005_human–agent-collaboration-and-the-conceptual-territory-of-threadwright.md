@@ -787,3 +787,163 @@ Its value at this stage is as a question generator:
 > What, if anything, emerges from sustained interaction between human and artificial cognition that neither produces as effectively in isolation?
 
 That question remains open.
+
+---
+
+# 19. Research Evolution — HAI Corpus Identified as a Dedicated Research Branch
+
+The research has identified the established **Human-Agent Interaction (HAI)** research community and conference lineage as a major prior-art corpus relevant to the questions above.
+
+The international HAI conference has existed since 2013, with HAI 2026 being the 14th International Conference. The associated Japanese HAI Symposium lineage extends substantially further, with publicly available material reaching back to 2006.
+
+This discovery materially changes the research strategy.
+
+HAI is not merely an adjacent source of papers about agents. It represents a substantial established research community concerned with many of the concepts currently appearing in RESEARCH-0005, including:
+
+- agency;
+- human-agent collaboration;
+- adaptation;
+- delegation;
+- trust;
+- human-agent teaming;
+- learning;
+- dependency;
+- capability;
+- reciprocal knowledge exchange;
+- autonomy;
+- initiative;
+- and increasingly autonomous/LLM-based agents.
+
+Therefore several apparent candidate contributions in RESEARCH-0005 must now be treated as established conceptual territory rather than novel discoveries.
+
+In particular:
+
+- human-agent collaboration is established;
+- agency/interaction/adaptation is established territory;
+- delegation is established research territory;
+- human-agent dependency is established research territory;
+- AI-supported skill development and possible deskilling are established research questions;
+- human training for effective human-agent teaming is established research;
+- reciprocal knowledge exchange is an emerging established research direction;
+- "thinking partner" / "cognitive partner" terminology already exists.
+
+The detailed adversarial examination is delegated to **RESEARCH-0006: Human-Agent Interaction Corpus Reconstruction and Adversarial Review**.
+
+RESEARCH-0006 is therefore a **research branch of RESEARCH-0005, not a replacement for it**.
+
+---
+
+# 20. Sharpening the Capability / Judgment Hypothesis
+
+The research has also corrected an overly strong interpretation of the earlier discussion concerning judgment and "józan paraszti ész" (JPÉ).
+
+The claim is **not**:
+
+> Agents cannot perform judgment.
+
+Nor:
+
+> Humans possess a category of judgment that AI can never reproduce.
+
+The more defensible hypothesis is:
+
+> **Some human capabilities may be substantially harder to reliably transfer, formalize, reproduce, or train into artificial agents than other capabilities.**
+
+JPÉ is used here as an informal example of the kind of situated capability under consideration.
+
+The relevant characteristics may include:
+
+- tacit knowledge;
+- contextual interpretation;
+- recognizing which facts matter;
+- recognizing when an apparently valid solution is absurd;
+- situated judgment;
+- understanding unstated constraints;
+- deciding what deserves pursuit;
+- recognizing when a goal itself should be reconsidered.
+
+This creates a potential strategic implication:
+
+> **Capabilities that are difficult to delegate or reproduce may become more important to deliberately cultivate as other forms of cognitive execution become increasingly cheap.**
+
+This is a hypothesis requiring research.
+
+It does **not** imply that the human should perform every difficult cognitive task.
+
+The emerging principle is instead:
+
+> **Do not train humans merely to perform what agents can readily perform. Deliberately cultivate capabilities whose preservation or development matters and whose reliable delegation, transfer, or reproduction is difficult.**
+
+This is not yet a Threadwright principle.
+
+It is a research hypothesis requiring comparison with existing work on expertise, tacit knowledge, skill acquisition, human-agent teaming, cognitive offloading, and agent capability.
+
+---
+
+# 21. Revised Research Direction
+
+The combination of the existing RESEARCH-0005 work and the newly identified HAI corpus suggests a sharper research trajectory:
+
+```text
+                 HUMAN–AGENT INTERACTION
+                           │
+                           ▼
+                    COGNITIVE WORK
+                           │
+              ┌────────────┴────────────┐
+              ▼                         ▼
+        DELEGATION                 HUMAN PRACTICE
+              │                         │
+              ▼                         ▼
+      PRESENT PERFORMANCE        CAPABILITY DEVELOPMENT
+              │                         │
+              └────────────┬────────────┘
+                           ▼
+                    FUTURE CAPABILITY
+                           │
+                           ▼
+                    EXPERTISE PIPELINE
+                           │
+                           ▼
+                     SOCIETAL CAPABILITY
+```
+
+The emerging central question is therefore no longer simply whether humans and agents collaborate effectively.
+
+It is:
+
+> **Under what conditions does human-agent interaction produce capability development rather than capability substitution, and how should cognitive work be allocated when present performance and future human capability are simultaneous objectives?**
+
+RESEARCH-0006 exists to determine how much of this question is already answered by the HAI research community and where genuine unresolved territory remains.
+
+---
+
+# 22. Next Research Step
+
+The immediate next step is not to modify Threadwright.
+
+It is to conduct the HAI corpus investigation defined in **RESEARCH-0006**.
+
+The result of that investigation should subsequently feed back into RESEARCH-0005 through another explicit research evolution/update.
+
+The research flow remains:
+
+```text
+research
+   ↓
+adversarial investigation
+   ↓
+assessment
+   ↓
+research evolution
+   ↓
+candidate concept
+   ↓
+attempt to eliminate candidate
+   ↓
+only surviving concepts
+   ↓
+potential Threadwright change
+```
+
+No HAI finding is therefore automatically promoted to Threadwright doctrine.
