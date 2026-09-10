@@ -82,7 +82,7 @@ Look for:
 
 ### 5. Review Epistemic Integrity
 
-Apply [I3 — Epistemic Integrity](../threadwright.md#i3--epistemic-integrity) and [Epistemic Integrity](../heuristics/epistemic-integrity.md) to the change itself. Determine whether it preserves appropriate distinctions between:
+Apply [INVARIANT-0003 — Epistemic Integrity](../threadwright.md#invarient-0003--epistemic-integrity) and [HEURISTIC-0008 — Epistemic Integrity](../heuristics/HEURISTIC-0008_epistemic-integrity.md) to the change itself. Determine whether it preserves appropriate distinctions between:
 
 - observation and interpretation;
 - evidence and conclusion;

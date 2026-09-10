@@ -12,9 +12,9 @@ Do not confuse the objective being optimized with a convenient proxy for that ob
 
 A measurable activity, output, or intermediate result is not necessarily the outcome that matters.
 
-Threadwright should remain oriented toward consequential knowledge, meaningful uncertainty reduction, and the intended outcome rather than optimizing proxies that merely correlate with them. This guards the [I5 — Optimization](threadwright.md#i5--optimization) invariant against drifting toward whatever is easiest to measure.
+Threadwright should remain oriented toward consequential knowledge, meaningful uncertainty reduction, and the intended outcome rather than optimizing proxies that merely correlate with them. This guards the [INVARIANT-0005 — Optimization](threadwright.md#invarient-0005--optimization) invariant against drifting toward whatever is easiest to measure.
 
-This principle is currently an emerging hypothesis, not established knowledge — see [ASSESSMENT-0010](artifacts/ASSESSMENT-0010_objective-and-proxy-in-knowledge-optimization.md) for its origin and open validation questions.
+This principle is currently an emerging hypothesis, not established knowledge — see [ASSESSMENT-0010_objective-and-proxy-in-knowledge-optimization](artifacts/assessments/ASSESSMENT-0010_objective-and-proxy-in-knowledge-optimization.md) for its origin and open validation questions.
 
 ## Address Consequential Gaps
 
@@ -22,7 +22,7 @@ Prioritize gaps according to their consequence for the intended outcome.
 
 Not every unknown needs to be resolved. Not every uncertainty warrants investigation. Not every missing piece of information is equally valuable to obtain.
 
-The value of an activity depends on how materially it can improve the ability to achieve the intended outcome. Applied through [H1 — Address Consequential Gaps](heuristics/address-consequential-gaps.md).
+The value of an activity depends on how materially it can improve the ability to achieve the intended outcome. Applied through [HEURISTIC-0001 — Address Consequential Gaps](heuristics/HEURISTIC-0001_address-consequential-gaps.md).
 
 ## Generate Broadly, Compress Deliberately
 
@@ -30,7 +30,7 @@ When generation is cheap, generate broadly before selecting what should remain.
 
 Broad generation can expose possibilities, relationships, and structures that would otherwise remain undiscovered. Selection and compression should then remove cognitive noise, redundancy, and unnecessary complexity without destroying useful information.
 
-Compactness is not minimalism. The objective is not the smallest possible result, but the greatest useful value and comprehension for the cognitive cost. See [H9 — Generate Broadly, Compress Deliberately](heuristics/generate-broadly-compress-deliberately.md) for operational detail and review questions.
+Compactness is not minimalism. The objective is not the smallest possible result, but the greatest useful value and comprehension for the cognitive cost. See [HEURISTIC-0009 — Generate Broadly, Compress Deliberately](heuristics/HEURISTIC-0009_generate-broadly-compress-deliberately.md) for operational detail and review questions.
 
 ## Move Toward Reality When Abstraction Stops Producing Knowledge
 
@@ -38,7 +38,7 @@ When reasoning, analysis, or abstraction can no longer reduce a consequential ga
 
 This may mean building, testing, observing, experimenting, interacting, or otherwise creating experience.
 
-The boundary between thinking and experience is therefore dynamic rather than fixed — see [Dynamic Think/Experience Boundary](heuristics/dynamic-think-experience-boundary.md).
+The boundary between thinking and experience is therefore dynamic rather than fixed — see [HEURISTIC-0006 — Dynamic Think/Experience Boundary](heuristics/HEURISTIC-0006_dynamic-think-experience-boundary.md).
 
 ## Keep Complexity Proportional to Evidence
 
@@ -54,7 +54,7 @@ Distinguish what is observed from what is interpreted, hypothesized, decided, or
 
 Do not allow generated, inferred, or assumed knowledge to silently acquire the status of established knowledge.
 
-Confidence does not substitute for evidence. This is the [I3 — Epistemic Integrity](threadwright.md#i3--epistemic-integrity) invariant; see [Epistemic Integrity](heuristics/epistemic-integrity.md) for the distinctions it requires.
+Confidence does not substitute for evidence. This is the [INVARIANT-0003 — Epistemic Integrity](threadwright.md#invarient-0003--epistemic-integrity) invariant; see [HEURISTIC-0008 — Epistemic Integrity](heuristics/HEURISTIC-0008_epistemic-integrity.md) for the distinctions it requires.
 
 ## Preserve Provenance When It Carries Meaning
 
@@ -78,7 +78,7 @@ A change to Threadwright can affect more than the thing being changed.
 
 After consequential changes, reassess the resulting methodology as a whole: its coherence, conceptual boundaries, relationships, cognitive load, and ability to serve its intended purpose.
 
-A locally correct change can produce globally undesirable effects. This specializes the [I4 — Feedback](threadwright.md#i4--feedback) invariant (see also [H4 — Reassess](heuristics/reassess.md)) for changes to the methodology itself; [Methodology Change Review](activities/methodology-change-review.md) is its operationalization.
+A locally correct change can produce globally undesirable effects. This specializes the [INVARIANT-0004 — Feedback](threadwright.md#invarient-0004--feedback) invariant (see also [HEURISTIC-0004 — Reassess](heuristics/HEURISTIC-0004_reassess.md)) for changes to the methodology itself; [Methodology Change Review](activities/methodology-change-review.md) is its operationalization.
 
 ---
 
