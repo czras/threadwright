@@ -1,95 +1,230 @@
-# Threadwright 🧵
+# Threadwright
 
-Threadwright is infrastructure and methodology for the evolution of intent and knowledge.
+> **Threadwright is about charting the unknown.**
 
-It is implementation-agnostic: Threadwright does not require a particular product-management system, development lifecycle, software architecture, or agent architecture. Tooling is a potential implementation of Threadwright, not Threadwright itself.
+Threadwright is a framework for exploring, structuring, and accumulating knowledge while the thing being explored is still changing.
 
-## Conceptual foundation
+It emerged from practice rather than being designed as a complete system in advance: messy thoughts, engineering work, running, relationships, research, and interaction with intelligent machines gradually exposed a recurring pattern.
 
-### Homo Sapiens Agenticus
+The central problem is simple:
 
-**Homo Sapiens Agenticus** is a precursor thesis about human–agent cognitive partnership. It is conceptually independent of Threadwright. It explores how naturally associative human cognition can be complemented by persistent agentic capabilities such as memory, continuity, structural discipline, and relationship management.
+> **How do we navigate possibility when we do not yet know the shape of the territory?**
 
-See [`methodology/homo-sapiens-agenticus.md`](methodology/homo-sapiens-agenticus.md).
+## The expedition
 
-### Threadwright
+Think of humans and intelligent machines working together as an expedition into an incompletely mapped world.
 
-Threadwright is the infrastructure concept that can operationalize ideas compatible with the HSA thesis: infrastructure for preserving, connecting, evolving, and operationalizing knowledge and intent.
+🚀 **Humans + intelligent machines — the spacecraft**  
+A combined system capable of entering territory that neither side would necessarily explore in the same way alone.
 
-See [`methodology/threadwright.md`](methodology/threadwright.md).
+🧵 **Threadwright — the mission system**  
+Tracks where we have been, what we learned, which paths failed, what remains uncertain, and where to explore next.
 
-### Methodology
+🛞 **Agents — the instruments / rovers**  
+They can investigate, generate alternatives, analyze evidence, execute bounded actions, and return observations.
 
-The Threadwright methodology is the implementation-agnostic way of applying the Threadwright approach. It provides a small set of concepts and a continuous control loop for maintaining knowledge, identifying consequential gaps, choosing useful activity, and reassessing what should happen next.
+🌀 **Fractal — the phenomenon being investigated**  
+A candidate recurring pattern in how exploration, knowledge generation, and adaptation operate across different scales.
 
-### Heuristics
+🗺️ **Knowledge — the map**  
+The accumulated representation of what has become observable, understood, connected, tested, or ruled out.
 
-Heuristics provide reusable reasoning guidance for applying the methodology. They are guidance, not additional fundamental concepts.
+🌍 **Reality — the terrain**  
+The environment that ultimately determines whether our beliefs, plans, and actions work.
 
-### Scenarios
+The loop is:
 
-Scenarios demonstrate and challenge the methodology in concrete situations. They are examples and validation material, not prescribed workflows.
+\[
+\boxed{
+\text{Explore}
+\rightarrow
+\text{Observe}
+\rightarrow
+\text{Learn}
+\rightarrow
+\text{Update the map}
+\rightarrow
+\text{Reassess}
+\rightarrow
+\text{Explore}
+}
+\]
 
-### Tooling
+The map is never finished.
 
-Tooling is a potential technological implementation of Threadwright. The repository deliberately keeps the conceptual and methodological model independent of any particular tooling architecture.
+## Possibility and fog
 
-Two tooling directions have emerged as areas worth exploring:
+The possibility space exists whether or not we can currently see it.
 
-- **Implementation design tooling** — tooling that helps humans and agents apply Threadwright to a concrete implementation context while maintaining artifacts, relationships, reasoning, and activities.
-- **Artifact system exploration tooling** — tooling for exploring artifacts, relationships, and evolving state.
+Some possible future states are known.
 
-These are directions for exploration, not a committed product roadmap.
+Others are imaginable but poorly understood.
 
-## Repository structure
+Others are completely outside the current map.
 
-```text
-.
-├── methodology/
-│   ├── README.md
-│   ├── homo-sapiens-agenticus.md
-│   ├── threadwright.md
-│   ├── heuristics/
-│   ├── scenarios/
-│   └── artifacts/
-├── conventions/
-│   ├── artifact-system.md
-│   └── git.md
-├── meta/
-│   └── brand.md
-├── README.md
-├── LICENSE-SOFTWARE
-└── LICENSE-INTELLECTUAL
-```
+The important distinction is therefore not simply:
 
-### `methodology/`
+> possible vs. impossible
 
-The conceptual and methodological body of Threadwright: HSA, Threadwright, the methodology itself, heuristics, scenarios, and the artifacts produced while developing the methodology.
+but also:
 
-- [`methodology/heuristics/README.md`](methodology/heuristics/README.md) — Reusable reasoning guidance for applying the methodology
-- [`methodology/scenarios/README.md`](methodology/scenarios/README.md) — Concrete situations demonstrating and challenging the methodology
+> **possible but foggy vs. observable and actionable**
 
-### `conventions/`
+Intelligent machines can change this boundary.
 
-Conventions for developing and maintaining this project. They describe repository and artifact-management practices used by the project itself. They support the implementation and evolution of Threadwright but are **not part of the Threadwright conceptual model**.
+They do not create reality's possibility space. They can make more of that space accessible to human cognition and action.
 
-The distinction is intentional: conventions are about **how this project is developed**, whereas the methodology is about **how a Threadwright-managed body of work is reasoned about and evolved**.
+\[
+\text{possible but foggy}
+\rightarrow
+\text{observable}
+\rightarrow
+\text{understood}
+\rightarrow
+\text{actionable}
+\]
 
-### `meta/`
+This is one reason lowering the cost of exploration matters: a possibility that was previously too expensive to investigate can become worth investigating.
 
-Project-level identity and brand material. Brand names, marks, and other reserved identity material are not automatically licensed under either repository content license.
+## Explore, compact, reassess
 
-## Licensing
+Exploration expands the candidate space.
 
-Threadwright distinguishes between **software** and **intellectual material** when licensing repository contents.
+Compaction turns observations into a usable representation.
 
-- **Software** is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. See [`LICENSE-SOFTWARE`](LICENSE-SOFTWARE).
-- **Intellectual and documentary material** is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**. See [`LICENSE-INTELLECTUAL`](LICENSE-INTELLECTUAL).
+Reassessment asks what should happen next given what has changed.
 
-The license follows the **nature of the material**, not its directory. Conceptual, methodological, documentary, and project-governance material is intellectual material; executable software is software.
+\[
+\boxed{
+\text{Explore}
+\rightarrow
+\text{Compact}
+\rightarrow
+\text{Reassess}
+}
+\]
 
-Neither license grants rights to Threadwright names, logos, trademarks, or other explicitly reserved brand identity unless those rights are separately stated.
+But the evaluator itself can change.
 
-## Status
+Learning changes what matters.
 
-Threadwright is an evolving body of work. Its concepts, methodology, heuristics, scenarios, conventions, and potential tooling are expected to change as they are applied, challenged, and reassessed.
+Reality changes the available options.
+
+New evidence changes the value of previously rejected paths.
+
+Therefore the loop does not merely optimize a fixed objective.
+
+It continuously updates both:
+
+1. **the map**, and
+2. **the understanding of where to go next.**
+
+Plans are hypotheses.
+
+**Reality is the evaluator.**
+
+## Why intelligent machines matter
+
+An intelligent machine is not interesting merely because it can produce an answer faster.
+
+Its deeper significance is that it can alter the economics of exploration.
+
+If exploring a cognitive branch costs \(C_e\), and its expected value is \(V_e\), then a branch may be pursued when:
+
+\[
+V_e > C_e
+\]
+
+Reducing \(C_e\) changes the set of branches that become economically reachable.
+
+That can expose possibilities that were always present but previously remained unexplored.
+
+This creates a potentially important feedback loop:
+
+\[
+\text{lower exploration cost}
+\rightarrow
+\text{more exploration}
+\rightarrow
+\text{more discoveries}
+\rightarrow
+\text{more capability}
+\rightarrow
+\text{lower future exploration cost}
+\]
+
+Whether this effect is general, how large it is, and under which conditions it occurs are empirical questions.
+
+## Threadwright as instrument
+
+Threadwright is therefore not intended to be a machine that already knows the answer.
+
+It is an instrument for **finding out**.
+
+It preserves:
+
+- what was tried,
+- what was learned,
+- what remains uncertain,
+- which alternatives were rejected,
+- why they were rejected,
+- what changed,
+- and what should be reconsidered when the context changes.
+
+The history matters because a rejected path is not necessarily a refuted path.
+
+Sometimes it was simply unaffordable.
+
+Sometimes the constraints changed.
+
+Sometimes the evaluator changed.
+
+Sometimes the map became better.
+
+## The deeper hypothesis
+
+Across engineering, science, relationships, career decisions, exploration, and human–machine interaction, a similar pattern appears:
+
+\[
+\text{unknown}
+\rightarrow
+\text{exploration}
+\rightarrow
+\text{observation}
+\rightarrow
+\text{knowledge}
+\rightarrow
+\text{changed possibility space}
+\rightarrow
+\text{new exploration}
+\]
+
+This recurring structure is the **Fractal hypothesis**.
+
+It is not assumed to be universal.
+
+It is something to investigate.
+
+Threadwright is one instrument for doing so.
+
+Human–machine interaction is one particularly powerful environment in which to observe it.
+
+And human life itself is already one of the experiments.
+
+## The shortest version
+
+> **Reality is the terrain.**
+>
+> **Possibility is the map.**
+>
+> **Exploration reduces the fog.**
+>
+> **Intelligent machines can make exploration cheaper.**
+>
+> **Threadwright preserves and structures what we learn.**
+>
+> **Reality tells us whether we were right.**
+>
+> **Then we explore again.**
+
+**Threadwright is about charting the unknown.**
