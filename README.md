@@ -34,7 +34,7 @@ The environment that ultimately determines whether our beliefs, plans, and actio
 
 The loop is:
 
-\[
+$$
 \boxed{
 \text{Explore}
 \rightarrow
@@ -48,7 +48,7 @@ The loop is:
 \rightarrow
 \text{Explore}
 }
-\]
+$$
 
 The map is never finished.
 
@@ -74,7 +74,7 @@ Intelligent machines can change this boundary.
 
 They do not create reality's possibility space. They can make more of that space accessible to human cognition and action.
 
-\[
+$$
 \text{possible but foggy}
 \rightarrow
 \text{observable}
@@ -82,7 +82,7 @@ They do not create reality's possibility space. They can make more of that space
 \text{understood}
 \rightarrow
 \text{actionable}
-\]
+$$
 
 This is one reason lowering the cost of exploration matters: a possibility that was previously too expensive to investigate can become worth investigating.
 
@@ -94,7 +94,7 @@ Compaction turns observations into a usable representation.
 
 Reassessment asks what should happen next given what has changed.
 
-\[
+$$
 \boxed{
 \text{Explore}
 \rightarrow
@@ -102,7 +102,7 @@ Reassessment asks what should happen next given what has changed.
 \rightarrow
 \text{Reassess}
 }
-\]
+$$
 
 But the evaluator itself can change.
 
@@ -129,19 +129,19 @@ An intelligent machine is not interesting merely because it can produce an answe
 
 Its deeper significance is that it can alter the economics of exploration.
 
-If exploring a cognitive branch costs \(C_e\), and its expected value is \(V_e\), then a branch may be pursued when:
+If exploring a cognitive branch costs $C_e$, and its expected value is $V_e$, then a branch may be pursued when:
 
-\[
+$$
 V_e > C_e
-\]
+$$
 
-Reducing \(C_e\) changes the set of branches that become economically reachable.
+Reducing $C_e$ changes the set of branches that become economically reachable.
 
 That can expose possibilities that were always present but previously remained unexplored.
 
 This creates a potentially important feedback loop:
 
-\[
+$$
 \text{lower exploration cost}
 \rightarrow
 \text{more exploration}
@@ -151,7 +151,7 @@ This creates a potentially important feedback loop:
 \text{more capability}
 \rightarrow
 \text{lower future exploration cost}
-\]
+$$
 
 Whether this effect is general, how large it is, and under which conditions it occurs are empirical questions.
 
@@ -185,7 +185,7 @@ Sometimes the map became better.
 
 Across engineering, science, relationships, career decisions, exploration, and human–machine interaction, a similar pattern appears:
 
-\[
+$$
 \text{unknown}
 \rightarrow
 \text{exploration}
@@ -197,7 +197,7 @@ Across engineering, science, relationships, career decisions, exploration, and h
 \text{changed possibility space}
 \rightarrow
 \text{new exploration}
-\]
+$$
 
 This recurring structure is the **Fractal hypothesis**.
 
