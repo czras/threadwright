@@ -14,22 +14,22 @@ The central problem is simple:
 
 Think of humans and intelligent machines working together as an expedition into an incompletely mapped world.
 
-🚀 **Humans + intelligent machines — the spacecraft**  
+🚀 **Humans + intelligent machines — the spacecraft**
 A combined system capable of entering territory that neither side would necessarily explore in the same way alone.
 
-🧵 **Threadwright — the mission system**  
+🧵 **Threadwright — the mission system**
 Tracks where we have been, what we learned, which paths failed, what remains uncertain, and where to explore next.
 
-🛞 **Agents — the instruments / rovers**  
+🛞 **Agents — the instruments / rovers**
 They can investigate, generate alternatives, analyze evidence, execute bounded actions, and return observations.
 
-🌀 **Fractal — the phenomenon being investigated**  
+🌀 **Fractal — the phenomenon being investigated**
 A candidate recurring pattern in how exploration, knowledge generation, and adaptation operate across different scales.
 
-🗺️ **Knowledge — the map**  
+🗺️ **Knowledge — the map**
 The accumulated representation of what has become observable, understood, connected, tested, or ruled out.
 
-🌍 **Reality — the terrain**  
+🌍 **Reality — the terrain**
 The environment that ultimately determines whether our beliefs, plans, and actions work.
 
 The loop is:
@@ -228,3 +228,8 @@ And human life itself is already one of the experiments.
 > **Then we explore again.**
 
 **Threadwright is about charting the unknown.**
+
+## Where to go next
+
+For a research-informed synthesis of the human–agent
+interaction work underlying these ideas, see [HAI](HAI.md).
