@@ -1,0 +1,47 @@
+Filippo Barbera
+David Stark, The Sense of Dissonance.
+Accounts of Worth in Economic Life.
+
+---
+
+Why I search? I have an intent, I do not know how to realize it. I want to find a realization of that intent efficiently given my value function/values/constraints.
+
+Search engine: provides potential realizations. The human needs to convert its intent to a search phrase, then interpret the search results and construct the realization based on the results.
+
+LLM/Agent: explores, reasons about potential realizations, plan them and maybe even help achieving those realizations. The human defines the intent, then collaborates with the agent to understand and explore the intent itself, clarifying it. discovering the multiple branches of decision to make to refine the intent to something explicit. Judges the potential realization space (by describing its value function, values and constraints to the agent) then decides on which candidate to act on (which might mean further exploration to make a better judgement or implementation).
+This is a peer-to-peer collaboration process. Human contributes intent, judgement, decision. Agent contributes reasoning, information retrieval, memory and structure.
+
+TW as an inquiry (by Dewey) framework/tool.
+
+The value function is the composition of our values/preferences! Sometimes not really quantifiable (maybe categorizable though).
+
+'entrepreneurship is “the ability to keep multiple principles of evaluation in play and to benefit from that productive friction” [ch. 1, p. 6].' - generate rich, compress deliberately | optimize for flexibility | keep your options open (ie. the potential solution space as big as possible, especially when there is uncertainty in the equation)
+
+'While French conventionalist argue that orders of worth make action possible by way of solving uncertainty, Stark maintains hat a mix evaluative principles create uncertainty and opens opportunities for action accordingly.'
+UNCERTANITY - it is both solved and created by exploring the unknown
+
+entrepreneurship (by Stark) is the act/skill of navigating (and exploiting) the unknown
+
+Burt focuses on information and contrasts it to new knowledge. - uncertainty is missing in action
+
+'Heterarchy is the form of distributed intelligence' - a sophisticated organization optimized for knowledge gathering and processing and utilization
+
+'In such an environment, the most innovative firms are those able to promote radical decentralization in which virtually every unit becomes engaged in innovation.' - Marty Cagan's product team concept is a practical example for this
+
+Case study Minotaur - Taurus Gumiipari Vállalat - my father worked at Taurus @ Nyíregyháza before TVK (somewhere in the 1970's)
+
+TW: explore the unknown and let stuff emerge!
+
+procedural algorithm -> evolutionary algorithms -> emergent algorithm (TW)
+
+complex/composite performance criterion (ie. value function)
+
+the three studies are orthogonally traversing the most complex organizational domains: production/manufacturing, IT, trade (stock markets)
+
+Starks five suggested directions:
+search - explore the unknown
+organizations of diversity - generate rich
+reflexive cognition - TW control loop
+coordination through misunderstanding - reconcile consequential gaps
+
+social and economic are inherently composed
